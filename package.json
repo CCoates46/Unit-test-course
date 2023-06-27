@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "intTest": "jest --config intTest.config.ts",
-    "start": "ts-node src/app/server_app/Launcher.ts"
+    "start": "ts-node src/app/server_app/Launcher.ts",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
