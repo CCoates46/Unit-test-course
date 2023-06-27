@@ -197,7 +197,7 @@ describe('Server app integration test', () => {
 
     it('snapshot demo', async () => {
     
-    jest.spyOn(generated, 'generateRandomId').mockReturnValueOnce('12345')
+    jest.spyOn(generated, 'generateRandomId').mockReturnValueOnce('1234')
 
     await fetch('http://localhost:8080/reservation', {
         method:HTTP_METHODS.POST,
@@ -207,7 +207,7 @@ describe('Server app integration test', () => {
         }
     })
 
-    const getResult = await fetch(`http://localhost:8080/reservation/12345`, {
+    const getResult = await fetch(`http://localhost:8080/reservation/1234`, {
             method:HTTP_METHODS.GET,
             headers: {
                 authorization: token
